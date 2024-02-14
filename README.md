@@ -8,13 +8,3 @@ It works well on Windows, Linux and macOS if you have Docker installed.
 
 ![screenshot]
 
-## Usage
-
-`docker run --rm -it bcbcarl/hollywood`
-
-## License
-
-MIT
-
-[hollywood]: https://github.com/dustinkirkland/hollywood
-[screenshot]: screenshot.png
