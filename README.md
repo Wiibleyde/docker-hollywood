@@ -8,3 +8,8 @@ It works well on Windows, Linux and macOS if you have Docker installed.
 
 ![screenshot]
 
+# Usage
+
+```sh
+docker run --rm -it wiibleyde/hollywood:latest
+```
