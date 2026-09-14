@@ -1,0 +1,15 @@
+#!/usr/bin/python3
+"""Minimal stand-in for moreutils' errno(1).
+
+Only --list is implemented, which is all the hollywood widget calls. The real
+moreutils depends on perl, which is ~80 MB of image for one scrolling pane.
+"""
+import errno
+import os
+import sys
+
+if len(sys.argv) > 1 and sys.argv[1] == "--list":
+    for num in sorted(errno.errorcode):
+        print(errno.errorcode[num], num, os.strerror(num))
+else:
+    sys.exit("usage: errno --list")

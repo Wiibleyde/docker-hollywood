@@ -1,0 +1,6 @@
+# htop turns on xterm mouse reporting at startup and only turns it back off on
+# a clean exit. hollywood kills its panes with `pkill -9`, so the reset never
+# happens and the mouse mode leaks out to the real terminal -- where it shows
+# up as a mouse pointer that keeps vanishing. Nothing here is interactive, so
+# just never grab the mouse.
+enable_mouse=0

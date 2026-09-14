@@ -1,0 +1,6 @@
+services:
+  hollywood:
+    build: .
+    image: docker-hollywood
+    tty: true
+    stdin_open: true
